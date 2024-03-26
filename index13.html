@@ -1,0 +1,87 @@
+Q13
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown Menus</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="main-menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+        <ul class="sub-menu">
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Services</a>
+        <ul class="sub-menu">
+          <li><a href="#">Service 1</a></li>
+          <li><a href="#">Service 2</a></li>
+          <li><a href="#">Service 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
+<style>
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li:hover > a {
+  background-color: #f4f4f4;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 200px;
+  display: list-item;
+}
+
+nav ul ul a {
+  padding: 10px;
+}
+
+nav ul ul ul {
+  left: 100%;
+  top: 0;
+  border-top: none;
+}
+</style>
